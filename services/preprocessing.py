@@ -29,8 +29,14 @@ def predict_feedback(feedback):
     predictions = model.predict(inputs, verbose=0)
     predictions = predictions.reshape(len(predictions), -1, 4)
     sentiment_ids = np.argmax(predictions, axis=-1)
+    
+    print(predictions, sentiment_ids)
 
-    result = {}
+    result = []
     for aspect, sentiment_id in zip(ASPECTS, sentiment_ids[0]):
-        result[aspect] = REPLACEMENTS[sentiment_id]
+        emotion = REPLACEMENTS[sentiment_id]
+        result.append({
+            "aspect": aspect,
+            "emotion": emotion,
+        })
     return result
