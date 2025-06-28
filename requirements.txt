@@ -3,4 +3,6 @@ tensorflow==2.15.0
 transformers==4.36.0
 confluent-kafka==2.3.0
 pydantic==2.5.2
-python-dotenv 
+python-dotenv
+transformers==4.36.0
+tensorflow==2.15.0

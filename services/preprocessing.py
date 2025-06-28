@@ -27,7 +27,7 @@ def predict_feedback(feedback):
     )
     inputs = {k: tf.convert_to_tensor(v.numpy()) for k, v in tokenized.items()}
     predictions = model.predict(inputs, verbose=0)
-    predictions = predictions.reshape(len(predictions), -1, 4)
+    predictions = predictions.reshape(len(predictions), -1, 5)
     sentiment_ids = np.argmax(predictions, axis=-1)
     
     print(predictions, sentiment_ids)

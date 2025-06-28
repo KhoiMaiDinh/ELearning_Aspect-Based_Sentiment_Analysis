@@ -1,2 +1,5 @@
-KAFKA_BOOTSTRAP_SERVERS = 'localhost:9092'
-KAFKA_GROUP_ID = 'ai-analysis-service'
+from config import Config
+
+KAFKA_BOOTSTRAP_SERVERS = Config.KAFKA_BOOTSTRAP_SERVERS
+print(Config.KAFKA_BOOTSTRAP_SERVERS)
+KAFKA_GROUP_ID = Config.KAFKA_GROUP_ID

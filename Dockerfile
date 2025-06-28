@@ -23,7 +23,6 @@ EXPOSE 8000
 # Define environment variables
 ENV FLASK_APP=app.py
 ENV FLASK_RUN_HOST=0.0.0.0
-ENV FLASK_RUN_PORT=8000
 
 # Run the application
 CMD ["python", "app.py"]

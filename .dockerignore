@@ -1,0 +1,13 @@
+.venv
+**/__pycache__
+*/__pycache__/
+*.py[cod]
+.git
+.gitignore
+README.md
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
