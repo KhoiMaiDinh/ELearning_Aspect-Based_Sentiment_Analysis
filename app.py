@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from flask import Flask, jsonify
 from services.analysis_worker import run_worker
 
-from .config import Config
+from config import Config
 
 app = Flask(__name__)
 

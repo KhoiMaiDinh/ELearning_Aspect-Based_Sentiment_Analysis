@@ -11,3 +11,4 @@ README.md
 .env.development
 .env.test
 .env.production
+.env.sample
